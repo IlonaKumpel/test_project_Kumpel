@@ -1,0 +1,11 @@
+name: "astros_dbt"
+version: "1.0.0"
+config-version: 2
+
+profile: "clickhouse_demo"
+
+model-paths: ["models"]
+
+models:
+  astros_dbt:
+    +materialized: table

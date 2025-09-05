@@ -1,0 +1,1670 @@
+[0m17:17:54.293577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fa42f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e7fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e7f9d0>]}
+
+
+============================== 17:17:54.297635 | 2531d245-c6cd-494c-bc30-4d917f557315 ==============================
+[0m17:17:54.297635 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:17:54.297965 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'log_path': 'cosmos_project/logs', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'introspect': 'True', 'invocation_command': 'dbt debug --project-dir cosmos_project', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'quiet': 'False', 'no_print': 'None', 'fail_fast': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_format': 'default', 'warn_error': 'None', 'cache_selected_only': 'False', 'use_colors': 'True'}
+[0m17:17:54.309479 [info ] [MainThread]: dbt version: 1.10.11
+[0m17:17:54.309695 [info ] [MainThread]: python version: 3.13.1
+[0m17:17:54.309833 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+[0m17:17:54.309950 [info ] [MainThread]: os info: macOS-15.3.2-arm64-arm-64bit-Mach-O
+[0m17:17:54.310084 [info ] [MainThread]: Using profiles dir at /Users/ilonakumpel/.dbt
+[0m17:17:54.310194 [info ] [MainThread]: Using profiles.yml file at /Users/ilonakumpel/.dbt/profiles.yml
+[0m17:17:54.310297 [info ] [MainThread]: Using dbt_project.yml file at cosmos_project/dbt_project.yml
+[0m17:17:54.355408 [info ] [MainThread]: Configuration:
+[0m17:17:54.355663 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m17:17:54.355800 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:17:54.355919 [info ] [MainThread]: Required dependencies:
+[0m17:17:54.356091 [debug] [MainThread]: Executing "git --help"
+[0m17:17:54.368669 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:17:54.369146 [debug] [MainThread]: STDERR: "b''"
+[0m17:17:54.369293 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:17:54.369446 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m17:17:54.369582 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:17:54.369702 [info ] [MainThread]: dbt looked for a profiles.yml file in /Users/ilonakumpel/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:17:54.398566 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.14224012, "process_in_blocks": "0", "process_kernel_time": 0.118425, "process_mem_max_rss": "110329856", "process_out_blocks": "0", "process_user_time": 0.636226}
+[0m17:17:54.398904 [debug] [MainThread]: Command `dbt debug` failed at 17:17:54.398852 after 0.14 seconds
+[0m17:17:54.399160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106200640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ffd250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d0bbd0>]}
+[0m17:17:54.399392 [debug] [MainThread]: Flushing usage events
+[0m17:18:04.188911 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:21:18.192443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f302f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e03b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e039d0>]}
+
+
+============================== 17:21:18.195244 | bcc33e4e-53e5-417b-9d72-b3ac9355708c ==============================
+[0m17:21:18.195244 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:21:18.195562 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'write_json': 'True', 'partial_parse': 'True', 'debug': 'False', 'quiet': 'False', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'invocation_command': 'dbt debug --project-dir cosmos_project', 'log_path': 'cosmos_project/logs', 'use_colors': 'True', 'printer_width': '80', 'warn_error': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'target_path': 'None'}
+[0m17:21:18.205953 [info ] [MainThread]: dbt version: 1.10.11
+[0m17:21:18.206161 [info ] [MainThread]: python version: 3.13.1
+[0m17:21:18.206303 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+[0m17:21:18.206427 [info ] [MainThread]: os info: macOS-15.3.2-arm64-arm-64bit-Mach-O
+[0m17:21:18.237374 [info ] [MainThread]: Using profiles dir at /Users/ilonakumpel/.dbt
+[0m17:21:18.237580 [info ] [MainThread]: Using profiles.yml file at /Users/ilonakumpel/.dbt/profiles.yml
+[0m17:21:18.237724 [info ] [MainThread]: Using dbt_project.yml file at cosmos_project/dbt_project.yml
+[0m17:21:18.238030 [info ] [MainThread]: adapter type: clickhouse
+[0m17:21:18.238154 [info ] [MainThread]: adapter version: 1.9.2
+[0m17:21:18.280509 [info ] [MainThread]: Configuration:
+[0m17:21:18.280731 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:21:18.280875 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:21:18.280998 [info ] [MainThread]: Required dependencies:
+[0m17:21:18.281164 [debug] [MainThread]: Executing "git --help"
+[0m17:21:18.297320 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:21:18.297771 [debug] [MainThread]: STDERR: "b''"
+[0m17:21:18.297920 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:21:18.298069 [info ] [MainThread]: Connection:
+[0m17:21:18.298212 [info ] [MainThread]:   driver: None
+[0m17:21:18.298323 [info ] [MainThread]:   host: localhost
+[0m17:21:18.298419 [info ] [MainThread]:   port: 8123
+[0m17:21:18.298520 [info ] [MainThread]:   user: default
+[0m17:21:18.298611 [info ] [MainThread]:   schema: demo
+[0m17:21:18.298706 [info ] [MainThread]:   retries: 1
+[0m17:21:18.298800 [info ] [MainThread]:   cluster: None
+[0m17:21:18.298888 [info ] [MainThread]:   database_engine: None
+[0m17:21:18.298982 [info ] [MainThread]:   cluster_mode: False
+[0m17:21:18.299072 [info ] [MainThread]:   secure: False
+[0m17:21:18.299160 [info ] [MainThread]:   verify: False
+[0m17:21:18.299254 [info ] [MainThread]:   client_cert: None
+[0m17:21:18.299344 [info ] [MainThread]:   client_cert_key: None
+[0m17:21:18.299433 [info ] [MainThread]:   connect_timeout: 10
+[0m17:21:18.299523 [info ] [MainThread]:   send_receive_timeout: 300
+[0m17:21:18.299615 [info ] [MainThread]:   sync_request_timeout: 5
+[0m17:21:18.299704 [info ] [MainThread]:   compress_block_size: 1048576
+[0m17:21:18.299793 [info ] [MainThread]:   compression: 
+[0m17:21:18.299882 [info ] [MainThread]:   check_exchange: True
+[0m17:21:18.299974 [info ] [MainThread]:   custom_settings: None
+[0m17:21:18.300064 [info ] [MainThread]:   use_lw_deletes: False
+[0m17:21:18.300163 [info ] [MainThread]:   allow_automatic_deduplication: False
+[0m17:21:18.300254 [info ] [MainThread]:   tcp_keepalive: False
+[0m17:21:18.300533 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:21:18.370636 [debug] [MainThread]: Acquiring new clickhouse connection 'debug'
+[0m17:21:18.370942 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:21:19.591594 [debug] [MainThread]: dbt_clickhouse adapter: Got a retryable error when attempting to open a clickhouse connection.
+1 attempts remaining. Retrying in 1 seconds.
+Error:
+Error HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /? (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bbce850>: Failed to establish a new connection: [Errno 61] Connection refused')) executing HTTP request attempt 1 (http://localhost:8123)
+[0m17:21:20.601400 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:21:20.602181 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:21:20.602637 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Error HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /? (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10bc3dcd0>: Failed to establish a new connection: [Errno 61] Connection refused')) executing HTTP request attempt 1 (http://localhost:8123)
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:21:20.608483 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.4513617, "process_in_blocks": "0", "process_kernel_time": 0.232005, "process_mem_max_rss": "155746304", "process_out_blocks": "0", "process_user_time": 0.874559}
+[0m17:21:20.610036 [debug] [MainThread]: Command `dbt debug` failed at 17:21:20.609826 after 2.45 seconds
+[0m17:21:20.610647 [debug] [MainThread]: Connection 'debug' was left open.
+[0m17:21:20.611564 [debug] [MainThread]: On debug: No close available on handle
+[0m17:21:20.612150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc3e060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bc71130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bbdb680>]}
+[0m17:21:20.612767 [debug] [MainThread]: Flushing usage events
+[0m17:21:24.840002 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:23:29.517095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105af82f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069c7b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069c79d0>]}
+
+
+============================== 17:23:29.520339 | 01b14cc2-4126-4294-be11-cf8da902a9df ==============================
+[0m17:23:29.520339 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:23:29.520702 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'use_experimental_parser': 'False', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'invocation_command': 'dbt debug --project-dir cosmos_project', 'debug': 'False', 'printer_width': '80', 'no_print': 'None', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'version_check': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_path': 'cosmos_project/logs', 'partial_parse': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'introspect': 'True'}
+[0m17:23:29.531199 [info ] [MainThread]: dbt version: 1.10.11
+[0m17:23:29.531380 [info ] [MainThread]: python version: 3.13.1
+[0m17:23:29.531506 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+[0m17:23:29.531625 [info ] [MainThread]: os info: macOS-15.3.2-arm64-arm-64bit-Mach-O
+[0m17:23:29.563679 [info ] [MainThread]: Using profiles dir at /Users/ilonakumpel/.dbt
+[0m17:23:29.563903 [info ] [MainThread]: Using profiles.yml file at /Users/ilonakumpel/.dbt/profiles.yml
+[0m17:23:29.564050 [info ] [MainThread]: Using dbt_project.yml file at cosmos_project/dbt_project.yml
+[0m17:23:29.564342 [info ] [MainThread]: adapter type: clickhouse
+[0m17:23:29.564509 [info ] [MainThread]: adapter version: 1.9.2
+[0m17:23:29.607396 [info ] [MainThread]: Configuration:
+[0m17:23:29.607622 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:23:29.607773 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:23:29.607912 [info ] [MainThread]: Required dependencies:
+[0m17:23:29.608089 [debug] [MainThread]: Executing "git --help"
+[0m17:23:29.630676 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:23:29.631131 [debug] [MainThread]: STDERR: "b''"
+[0m17:23:29.631275 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:23:29.631418 [info ] [MainThread]: Connection:
+[0m17:23:29.631562 [info ] [MainThread]:   driver: None
+[0m17:23:29.631674 [info ] [MainThread]:   host: localhost
+[0m17:23:29.631769 [info ] [MainThread]:   port: 8123
+[0m17:23:29.631862 [info ] [MainThread]:   user: default
+[0m17:23:29.631954 [info ] [MainThread]:   schema: demo
+[0m17:23:29.632044 [info ] [MainThread]:   retries: 1
+[0m17:23:29.632140 [info ] [MainThread]:   cluster: None
+[0m17:23:29.632229 [info ] [MainThread]:   database_engine: None
+[0m17:23:29.632334 [info ] [MainThread]:   cluster_mode: False
+[0m17:23:29.632424 [info ] [MainThread]:   secure: False
+[0m17:23:29.632513 [info ] [MainThread]:   verify: False
+[0m17:23:29.632605 [info ] [MainThread]:   client_cert: None
+[0m17:23:29.632693 [info ] [MainThread]:   client_cert_key: None
+[0m17:23:29.632783 [info ] [MainThread]:   connect_timeout: 10
+[0m17:23:29.632873 [info ] [MainThread]:   send_receive_timeout: 300
+[0m17:23:29.632964 [info ] [MainThread]:   sync_request_timeout: 5
+[0m17:23:29.633055 [info ] [MainThread]:   compress_block_size: 1048576
+[0m17:23:29.633146 [info ] [MainThread]:   compression: 
+[0m17:23:29.633235 [info ] [MainThread]:   check_exchange: True
+[0m17:23:29.633323 [info ] [MainThread]:   custom_settings: None
+[0m17:23:29.633413 [info ] [MainThread]:   use_lw_deletes: False
+[0m17:23:29.633502 [info ] [MainThread]:   allow_automatic_deduplication: False
+[0m17:23:29.633595 [info ] [MainThread]:   tcp_keepalive: False
+[0m17:23:29.633878 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:23:29.677144 [debug] [MainThread]: Acquiring new clickhouse connection 'debug'
+[0m17:23:29.677478 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:23:30.041620 [debug] [MainThread]: dbt_clickhouse adapter: On debug: select 1 as id...
+[0m17:23:30.043176 [debug] [MainThread]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:23:30.055215 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:23:30.055418 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:23:30.057322 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.579451, "process_in_blocks": "0", "process_kernel_time": 0.209578, "process_mem_max_rss": "160825344", "process_out_blocks": "0", "process_user_time": 0.844114}
+[0m17:23:30.057536 [debug] [MainThread]: Command `dbt debug` succeeded at 17:23:30.057489 after 0.58 seconds
+[0m17:23:30.057671 [debug] [MainThread]: Connection 'debug' was left open.
+[0m17:23:30.057793 [debug] [MainThread]: On debug: Close
+[0m17:23:30.057962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10982e650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109862570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a7af10>]}
+[0m17:23:30.058129 [debug] [MainThread]: Flushing usage events
+[0m17:23:32.861499 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:24:58.324708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089242f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097fbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097fb9d0>]}
+
+
+============================== 17:24:58.327621 | 5ba0c917-9495-4b08-bea0-addc3f82a2cb ==============================
+[0m17:24:58.327621 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:24:58.327923 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'quiet': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'use_colors': 'True', 'debug': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'invocation_command': 'dbt run --project-dir cosmos_project', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'log_path': 'cosmos_project/logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'empty': 'False', 'warn_error': 'None', 'no_print': 'None', 'fail_fast': 'False'}
+[0m17:24:58.428007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b80640>]}
+[0m17:24:58.453281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10968af10>]}
+[0m17:24:58.453817 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:24:58.502529 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:24:58.502962 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:24:58.503146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096a7850>]}
+[0m17:24:59.039203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097eed50>]}
+[0m17:24:59.067516 [debug] [MainThread]: Wrote artifact WritableManifest to cosmos_project/target/manifest.json
+[0m17:24:59.068766 [debug] [MainThread]: Wrote artifact SemanticManifest to cosmos_project/target/semantic_manifest.json
+[0m17:24:59.081036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109faef90>]}
+[0m17:24:59.081239 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:24:59.081388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d17c70>]}
+[0m17:24:59.082097 [info ] [MainThread]: 
+[0m17:24:59.082252 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:24:59.082367 [info ] [MainThread]: 
+[0m17:24:59.082561 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:24:59.082905 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:24:59.086806 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:24:59.456232 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:24:59.457631 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:24:59.468612 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:24:59.471493 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:24:59.476089 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:24:59.477077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca8ee10>]}
+[0m17:24:59.478318 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:24:59.478549 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:24:59.478780 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:24:59.478973 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:24:59.482707 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:24:59.483173 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:24:59.509833 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:24:59.516261 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:24:59.522960 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:24:59.526154 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:24:59.527750 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:24:59.528213 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:24:59.532101 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:24:59.534046 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:24:59.535887 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:24:59.546453 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:24:59.548665 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:24:59.550088 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ba0c917-9495-4b08-bea0-addc3f82a2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb02410>]}
+[0m17:24:59.550402 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.07s]
+[0m17:24:59.550653 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:24:59.551262 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:24:59.551430 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:24:59.551547 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:24:59.551680 [info ] [MainThread]: 
+[0m17:24:59.551808 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m17:24:59.552090 [debug] [MainThread]: Command end result
+[0m17:24:59.563202 [debug] [MainThread]: Wrote artifact WritableManifest to cosmos_project/target/manifest.json
+[0m17:24:59.564026 [debug] [MainThread]: Wrote artifact SemanticManifest to cosmos_project/target/semantic_manifest.json
+[0m17:24:59.567123 [debug] [MainThread]: Wrote artifact RunExecutionResult to cosmos_project/target/run_results.json
+[0m17:24:59.567265 [info ] [MainThread]: 
+[0m17:24:59.567431 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:24:59.567553 [info ] [MainThread]: 
+[0m17:24:59.567683 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:24:59.569606 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.2795461, "process_in_blocks": "0", "process_kernel_time": 0.231608, "process_mem_max_rss": "173277184", "process_out_blocks": "0", "process_user_time": 1.466694}
+[0m17:24:59.569813 [debug] [MainThread]: Command `dbt run` succeeded at 17:24:59.569774 after 1.28 seconds
+[0m17:24:59.569965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdb6170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ccff1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108afc050>]}
+[0m17:24:59.570117 [debug] [MainThread]: Flushing usage events
+[0m17:25:02.586321 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:25:58.546907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1109602f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c3bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c3b9d0>]}
+
+
+============================== 17:25:58.550103 | 09891d4c-5470-4534-a22a-eaaab8eec75d ==============================
+[0m17:25:58.550103 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:25:58.550419 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'cosmos_project/logs', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'no_print': 'None', 'invocation_command': 'dbt run --project-dir cosmos_project', 'debug': 'False', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'partial_parse': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'printer_width': '80', 'use_colors': 'True', 'fail_fast': 'False', 'write_json': 'True', 'static_parser': 'True'}
+[0m17:25:58.647857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cbc640>]}
+[0m17:25:58.673401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ac6f10>]}
+[0m17:25:58.673969 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:25:58.723227 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:25:58.777742 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:25:58.777914 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:25:58.792230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113331850>]}
+[0m17:25:58.822838 [debug] [MainThread]: Wrote artifact WritableManifest to cosmos_project/target/manifest.json
+[0m17:25:58.823935 [debug] [MainThread]: Wrote artifact SemanticManifest to cosmos_project/target/semantic_manifest.json
+[0m17:25:58.834496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f42a80>]}
+[0m17:25:58.834689 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:25:58.834838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c26510>]}
+[0m17:25:58.835822 [info ] [MainThread]: 
+[0m17:25:58.835989 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:25:58.836102 [info ] [MainThread]: 
+[0m17:25:58.836302 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:25:58.836663 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:25:58.841614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:25:59.206934 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:25:59.208195 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:25:59.218581 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:25:59.221305 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:25:59.223440 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:25:59.224404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11349fe10>]}
+[0m17:25:59.225505 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:25:59.225736 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:25:59.225921 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:25:59.226063 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:25:59.229488 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:25:59.229782 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:25:59.258245 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:25:59.266519 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:25:59.273295 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:25:59.275908 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:25:59.277561 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:25:59.277896 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:25:59.280182 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:25:59.282268 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:25:59.283344 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:25:59.294435 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:25:59.300756 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:25:59.302232 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '09891d4c-5470-4534-a22a-eaaab8eec75d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116b27e90>]}
+[0m17:25:59.302522 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.08s]
+[0m17:25:59.302794 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:25:59.303349 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:25:59.303474 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:25:59.303586 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:25:59.303714 [info ] [MainThread]: 
+[0m17:25:59.303840 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m17:25:59.304117 [debug] [MainThread]: Command end result
+[0m17:25:59.315076 [debug] [MainThread]: Wrote artifact WritableManifest to cosmos_project/target/manifest.json
+[0m17:25:59.315796 [debug] [MainThread]: Wrote artifact SemanticManifest to cosmos_project/target/semantic_manifest.json
+[0m17:25:59.318227 [debug] [MainThread]: Wrote artifact RunExecutionResult to cosmos_project/target/run_results.json
+[0m17:25:59.318358 [info ] [MainThread]: 
+[0m17:25:59.318514 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:25:59.318629 [info ] [MainThread]: 
+[0m17:25:59.318752 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:25:59.320437 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.81267345, "process_in_blocks": "0", "process_kernel_time": 0.231501, "process_mem_max_rss": "167133184", "process_out_blocks": "0", "process_user_time": 1.037142}
+[0m17:25:59.320632 [debug] [MainThread]: Command `dbt run` succeeded at 17:25:59.320595 after 0.81 seconds
+[0m17:25:59.320786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116b96ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f1cc30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f1cd70>]}
+[0m17:25:59.320944 [debug] [MainThread]: Flushing usage events
+[0m17:26:01.840071 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:26:43.245411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082742f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10930bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10930b9d0>]}
+
+
+============================== 17:26:43.248573 | efb42d65-37e5-47f4-b298-1bee5571bfea ==============================
+[0m17:26:43.248573 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:26:43.248904 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'warn_error': 'None', 'empty': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'log_cache_events': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'version_check': 'True', 'quiet': 'False', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False'}
+[0m17:26:43.346241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108690640>]}
+[0m17:26:43.371564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10919af10>]}
+[0m17:26:43.372121 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:26:43.420225 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:26:43.474643 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:26:43.474811 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:26:43.489338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109705850>]}
+[0m17:26:43.520199 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:26:43.521683 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:26:43.532288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109516a80>]}
+[0m17:26:43.532488 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:26:43.532641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092fa510>]}
+[0m17:26:43.533630 [info ] [MainThread]: 
+[0m17:26:43.533791 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:26:43.533909 [info ] [MainThread]: 
+[0m17:26:43.534116 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:26:43.534490 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:26:43.539268 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:43.897114 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:26:43.898556 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.909843 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:26:43.912709 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:26:43.915044 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.916036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10999fe10>]}
+[0m17:26:43.917195 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:26:43.917431 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:26:43.917627 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:26:43.917773 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:26:43.921210 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:26:43.921545 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:26:43.948293 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:26:43.952698 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.959720 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:26:43.961657 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.963214 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:26:43.963568 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:26:43.965706 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.967780 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:26:43.968919 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.979755 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:26:43.981070 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:26:43.982532 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efb42d65-37e5-47f4-b298-1bee5571bfea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdffe90>]}
+[0m17:26:43.982815 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.06s]
+[0m17:26:43.983077 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:26:43.983662 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:26:43.983800 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:26:43.983915 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:26:43.984043 [info ] [MainThread]: 
+[0m17:26:43.984172 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.45 seconds (0.45s).
+[0m17:26:43.984458 [debug] [MainThread]: Command end result
+[0m17:26:43.996013 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:26:43.996833 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:26:43.999402 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m17:26:43.999541 [info ] [MainThread]: 
+[0m17:26:43.999711 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:26:43.999835 [info ] [MainThread]: 
+[0m17:26:43.999967 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:26:44.001828 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.7942228, "process_in_blocks": "0", "process_kernel_time": 0.227743, "process_mem_max_rss": "167346176", "process_out_blocks": "0", "process_user_time": 1.031402}
+[0m17:26:44.002035 [debug] [MainThread]: Command `dbt run` succeeded at 17:26:44.001996 after 0.79 seconds
+[0m17:26:44.002186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce6eba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1f4cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d1f4d70>]}
+[0m17:26:44.002345 [debug] [MainThread]: Flushing usage events
+[0m17:26:47.555310 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:28:17.358237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c4c2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b23b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b239d0>]}
+
+
+============================== 17:28:17.361239 | aa7182db-f1c4-42bb-8ea2-bc51b4560e36 ==============================
+[0m17:28:17.361239 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:28:17.361569 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'quiet': 'False', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'static_parser': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'introspect': 'True', 'debug': 'False', 'write_json': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --full-refresh', 'send_anonymous_usage_stats': 'True', 'empty': 'False'}
+[0m17:28:17.458493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ea8640>]}
+[0m17:28:17.483625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069b2f10>]}
+[0m17:28:17.484157 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:28:17.531978 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:28:17.586527 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:28:17.586698 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:28:17.601131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f1d850>]}
+[0m17:28:17.631812 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:28:17.633098 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:28:17.643727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2ea80>]}
+[0m17:28:17.643924 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:28:17.644078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b12510>]}
+[0m17:28:17.645052 [info ] [MainThread]: 
+[0m17:28:17.645199 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:28:17.645307 [info ] [MainThread]: 
+[0m17:28:17.645505 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:28:17.645874 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:28:17.650597 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:28:18.017396 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:28:18.018691 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:28:18.029126 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:28:18.031876 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:28:18.034385 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:28:18.035372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10708be10>]}
+[0m17:28:18.036494 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:28:18.036724 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:28:18.036923 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:28:18.037070 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:28:18.040394 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:28:18.040706 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:28:18.066329 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:28:18.073540 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:28:18.080035 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:28:18.083731 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:28:18.085236 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:28:18.085566 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:28:18.089885 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:28:18.091863 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:28:18.094185 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:28:18.104814 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:28:18.107124 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:28:18.108499 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aa7182db-f1c4-42bb-8ea2-bc51b4560e36', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a67e90>]}
+[0m17:28:18.108782 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.07s]
+[0m17:28:18.109043 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:28:18.109598 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:28:18.109734 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:28:18.109852 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:28:18.109983 [info ] [MainThread]: 
+[0m17:28:18.110111 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[0m17:28:18.110377 [debug] [MainThread]: Command end result
+[0m17:28:18.121557 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:28:18.122333 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:28:18.124826 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m17:28:18.124960 [info ] [MainThread]: 
+[0m17:28:18.125123 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:28:18.125245 [info ] [MainThread]: 
+[0m17:28:18.125376 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:28:18.126820 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8034179, "process_in_blocks": "0", "process_kernel_time": 0.22697, "process_mem_max_rss": "165232640", "process_out_blocks": "0", "process_user_time": 1.026683}
+[0m17:28:18.126999 [debug] [MainThread]: Command `dbt run` succeeded at 17:28:18.126964 after 0.80 seconds
+[0m17:28:18.127139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ad6ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e5ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e5cd70>]}
+[0m17:28:18.127295 [debug] [MainThread]: Flushing usage events
+[0m17:28:25.621182 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:29:14.244036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040202f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050bbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050bb9d0>]}
+
+
+============================== 17:29:14.247003 | 78bf4815-971d-4d32-8e04-f923fdfcc22e ==============================
+[0m17:29:14.247003 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:29:14.247304 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/Users/ilonakumpel/.dbt', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'introspect': 'True', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'use_colors': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --full-refresh', 'version_check': 'True', 'empty': 'False', 'target_path': 'None', 'static_parser': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'printer_width': '80', 'quiet': 'False', 'cache_selected_only': 'False'}
+[0m17:29:14.348804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104440640>]}
+[0m17:29:14.374392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f4af10>]}
+[0m17:29:14.374944 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:29:14.422417 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:29:14.475703 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:29:14.475871 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:29:14.490283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054b9850>]}
+[0m17:29:14.520765 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:29:14.522105 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:29:14.533052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052c6a80>]}
+[0m17:29:14.533251 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:29:14.533399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050aa510>]}
+[0m17:29:14.534415 [info ] [MainThread]: 
+[0m17:29:14.534564 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:29:14.534674 [info ] [MainThread]: 
+[0m17:29:14.534878 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:29:14.535244 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:29:14.540015 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:29:14.911747 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:29:14.913135 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:29:14.923685 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:29:14.926565 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:29:14.932951 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:29:14.933923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105623e10>]}
+[0m17:29:14.935115 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:29:14.935356 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:29:14.935549 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:29:14.935694 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:29:14.939264 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:29:14.939592 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:29:14.966154 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:29:14.983491 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.02 seconds
+[0m17:29:14.991335 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:29:14.993379 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:29:14.995368 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:29:14.995755 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:29:15.007344 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:29:15.009563 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:29:15.010677 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:29:15.022088 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:29:15.024154 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:29:15.025697 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78bf4815-971d-4d32-8e04-f923fdfcc22e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ebbe90>]}
+[0m17:29:15.025999 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.09s]
+[0m17:29:15.026247 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:29:15.026788 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:29:15.026936 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:29:15.027059 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:29:15.027201 [info ] [MainThread]: 
+[0m17:29:15.027339 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.49 seconds (0.49s).
+[0m17:29:15.027615 [debug] [MainThread]: Command end result
+[0m17:29:15.039131 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:29:15.039895 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:29:15.042458 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m17:29:15.042592 [info ] [MainThread]: 
+[0m17:29:15.042754 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:29:15.042873 [info ] [MainThread]: 
+[0m17:29:15.043002 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:29:15.044828 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.83876336, "process_in_blocks": "0", "process_kernel_time": 0.224306, "process_mem_max_rss": "166576128", "process_out_blocks": "0", "process_user_time": 1.029688}
+[0m17:29:15.045030 [debug] [MainThread]: Command `dbt run` succeeded at 17:29:15.044993 after 0.84 seconds
+[0m17:29:15.045173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f2aba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b0cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082b0d70>]}
+[0m17:29:15.045313 [debug] [MainThread]: Flushing usage events
+[0m17:29:23.226029 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:39:43.688385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040802f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f5bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f5b9d0>]}
+
+
+============================== 17:39:43.691316 | 78b73c5d-28a8-437f-b752-cb69bb003da4 ==============================
+[0m17:39:43.691316 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:39:43.691618 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'quiet': 'False', 'warn_error': 'None', 'invocation_command': 'dbt run --full-refresh', 'static_parser': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'log_format': 'default', 'target_path': 'None', 'use_colors': 'True', 'no_print': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'version_check': 'True', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True'}
+[0m17:39:43.790820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042dc640>]}
+[0m17:39:43.816798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104de6f10>]}
+[0m17:39:43.817417 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:39:43.865280 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:39:43.905406 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:39:43.905752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e02850>]}
+[0m17:39:44.432854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105161c70>]}
+[0m17:39:44.461913 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:39:44.462993 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:39:44.474023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10574d470>]}
+[0m17:39:44.474262 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:39:44.474444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053e7c70>]}
+[0m17:39:44.475147 [info ] [MainThread]: 
+[0m17:39:44.475297 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:39:44.475408 [info ] [MainThread]: 
+[0m17:39:44.475607 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:39:44.475966 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:39:44.480107 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:39:44.817359 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:39:44.818667 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:39:44.829126 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:39:44.831940 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:39:44.835280 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:39:44.836250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081bf290>]}
+[0m17:39:44.837497 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:39:44.837712 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:39:44.837901 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:39:44.838052 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:39:44.842916 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:39:44.843456 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:39:44.869459 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:39:44.877949 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:39:44.884640 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:39:44.888752 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:39:44.890285 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:39:44.890625 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:39:44.894175 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:39:44.896309 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:39:44.898349 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:39:44.909341 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:39:44.912257 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:39:44.913685 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '78b73c5d-28a8-437f-b752-cb69bb003da4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081efe30>]}
+[0m17:39:44.913970 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.08s]
+[0m17:39:44.914227 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:39:44.914780 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:39:44.914921 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:39:44.915042 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:39:44.915184 [info ] [MainThread]: 
+[0m17:39:44.915316 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.44 seconds (0.44s).
+[0m17:39:44.915594 [debug] [MainThread]: Command end result
+[0m17:39:44.924741 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:39:44.925558 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:39:44.928335 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m17:39:44.928482 [info ] [MainThread]: 
+[0m17:39:44.928648 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:39:44.928769 [info ] [MainThread]: 
+[0m17:39:44.928896 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:39:44.930234 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.278484, "process_in_blocks": "0", "process_kernel_time": 0.225051, "process_mem_max_rss": "173473792", "process_out_blocks": "0", "process_user_time": 1.486321}
+[0m17:39:44.930426 [debug] [MainThread]: Command `dbt run` succeeded at 17:39:44.930390 after 1.28 seconds
+[0m17:39:44.930570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108619270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10823ba40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056258d0>]}
+[0m17:39:44.930717 [debug] [MainThread]: Flushing usage events
+[0m17:39:49.079698 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:40:59.692508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c842f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b63b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b639d0>]}
+
+
+============================== 17:40:59.695401 | a26c90ba-2d02-442f-9078-5edf374b492c ==============================
+[0m17:40:59.695401 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:40:59.695710 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'empty': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_format': 'default', 'no_print': 'None', 'write_json': 'True', 'invocation_command': 'dbt run --full-refresh', 'partial_parse': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'target_path': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'debug': 'False', 'quiet': 'False'}
+[0m17:40:59.792763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ee0640>]}
+[0m17:40:59.818118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049eaf10>]}
+[0m17:40:59.818706 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:40:59.867607 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:40:59.903386 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:40:59.903629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a07250>]}
+[0m17:41:00.430497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d66120>]}
+[0m17:41:00.459010 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:41:00.460301 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:41:00.471676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105371d30>]}
+[0m17:41:00.471879 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:41:00.472031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104febc70>]}
+[0m17:41:00.472736 [info ] [MainThread]: 
+[0m17:41:00.472889 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:41:00.473004 [info ] [MainThread]: 
+[0m17:41:00.473196 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:41:00.473551 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:41:00.477618 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:41:00.821101 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:41:00.822722 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:41:00.833385 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m17:41:00.836224 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m17:41:00.841507 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:41:00.842437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107dc3290>]}
+[0m17:41:00.843582 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:41:00.843811 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m17:41:00.844034 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m17:41:00.844179 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:41:00.847521 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:41:00.848002 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:41:00.876200 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+          )
+        
+        ...
+[0m17:41:00.884360 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m17:41:00.891493 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m17:41:00.895294 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:41:00.896890 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m17:41:00.897304 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    name,
+    craft,
+    _inserted_at
+FROM demo.people
+  ...
+[0m17:41:00.901376 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:41:00.903422 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m17:41:00.905505 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:41:00.916214 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m17:41:00.919696 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:41:00.921202 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a26c90ba-2d02-442f-9078-5edf374b492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107df7e30>]}
+[0m17:41:00.921496 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.08s]
+[0m17:41:00.921799 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:41:00.922478 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:41:00.922635 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:41:00.922770 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:41:00.922930 [info ] [MainThread]: 
+[0m17:41:00.923372 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.45 seconds (0.45s).
+[0m17:41:00.923738 [debug] [MainThread]: Command end result
+[0m17:41:00.933573 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:41:00.934399 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:41:00.937041 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m17:41:00.937181 [info ] [MainThread]: 
+[0m17:41:00.937338 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:41:00.937457 [info ] [MainThread]: 
+[0m17:41:00.937607 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:41:00.939166 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.2807269, "process_in_blocks": "0", "process_kernel_time": 0.233474, "process_mem_max_rss": "173735936", "process_out_blocks": "0", "process_user_time": 1.504867}
+[0m17:41:00.939401 [debug] [MainThread]: Command `dbt run` succeeded at 17:41:00.939356 after 1.28 seconds
+[0m17:41:00.939566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c20ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e436e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105277250>]}
+[0m17:41:00.939725 [debug] [MainThread]: Flushing usage events
+[0m17:41:04.354407 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:42:42.523453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d742f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c53b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c539d0>]}
+
+
+============================== 17:42:42.526496 | 02d73280-244a-4625-bdad-c431d1469446 ==============================
+[0m17:42:42.526496 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:42:42.526823 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --full-refresh', 'empty': 'False', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'introspect': 'True', 'log_format': 'default', 'write_json': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'printer_width': '80', 'fail_fast': 'False', 'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False'}
+[0m17:42:42.630265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '02d73280-244a-4625-bdad-c431d1469446', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fd0640>]}
+[0m17:42:42.656493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '02d73280-244a-4625-bdad-c431d1469446', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104adaf10>]}
+[0m17:42:42.657231 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:42:42.706782 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:42:42.763021 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 1 files changed.
+[0m17:42:42.763310 [debug] [MainThread]: Partial parsing: added file: cosmos_project://models/src.yml
+[0m17:42:42.763519 [debug] [MainThread]: Partial parsing: updated file: cosmos_project://models/people.sql
+[0m17:42:42.883290 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.cosmos_project.people' (models/people.sql) depends on a source named 'demo.raw_astros' which was not found
+[0m17:42:42.887698 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.4029601, "process_in_blocks": "0", "process_kernel_time": 0.159998, "process_mem_max_rss": "122404864", "process_out_blocks": "0", "process_user_time": 0.865585}
+[0m17:42:42.887941 [debug] [MainThread]: Command `dbt run` failed at 17:42:42.887888 after 0.40 seconds
+[0m17:42:42.888111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106235a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106236f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063fe6c0>]}
+[0m17:42:42.888265 [debug] [MainThread]: Flushing usage events
+[0m17:42:50.386609 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:43:56.198992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088bc2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10995fb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10995f9d0>]}
+
+
+============================== 17:43:56.201997 | 10072920-e906-43b1-bf63-620693bd115a ==============================
+[0m17:43:56.201997 [info ] [MainThread]: Running with dbt=1.10.11
+[0m17:43:56.202301 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'write_json': 'True', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'version_check': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --full-refresh', 'debug': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'printer_width': '80', 'use_colors': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'introspect': 'True', 'log_cache_events': 'False'}
+[0m17:43:56.301199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cdc640>]}
+[0m17:43:56.326284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097e6f10>]}
+[0m17:43:56.326836 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m17:43:56.374090 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m17:43:56.428871 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 1 files changed.
+[0m17:43:56.429129 [debug] [MainThread]: Partial parsing: added file: cosmos_project://models/src.yml
+[0m17:43:56.429319 [debug] [MainThread]: Partial parsing: updated file: cosmos_project://models/people.sql
+[0m17:43:56.578647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109d56c50>]}
+[0m17:43:56.634650 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:43:56.636092 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:43:56.647223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109b61130>]}
+[0m17:43:56.647441 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m17:43:56.647597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fb4ad0>]}
+[0m17:43:56.648308 [info ] [MainThread]: 
+[0m17:43:56.648461 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:43:56.648575 [info ] [MainThread]: 
+[0m17:43:56.648776 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m17:43:56.649163 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m17:43:56.653361 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:56.999570 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m17:43:57.000926 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:43:57.011775 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now create__demo_)
+[0m17:43:57.012030 [debug] [ThreadPool]: Creating schema "schema: "demo_"
+"
+[0m17:43:57.015272 [debug] [ThreadPool]: dbt_clickhouse adapter: On create__demo_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "create__demo_"} */
+create database if not exists `demo_`
+        
+  
+        
+  ...
+[0m17:43:57.017897 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:43:57.018706 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create__demo_, now list__demo_)
+[0m17:43:57.021619 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo_"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo_'
+      
+
+  ...
+[0m17:43:57.025539 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m17:43:57.026163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a124940>]}
+[0m17:43:57.027367 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m17:43:57.027605 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo_`.`people` .................................. [RUN]
+[0m17:43:57.027800 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo_, now model.cosmos_project.people)
+[0m17:43:57.027945 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m17:43:57.031340 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m17:43:57.031795 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m17:43:57.042810 [debug] [Thread-1 (]: Creating new relation people
+[0m17:43:57.055227 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo_`.`people`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+select
+    name,
+    craft
+from `demo`.`raw_astros`
+          )
+        
+        ...
+[0m17:43:57.059884 [debug] [Thread-1 (]: dbt_clickhouse adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo_`.`people`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+select
+    name,
+    craft
+from `demo`.`raw_astros`
+          )
+        
+        
+[0m17:43:57.067165 [debug] [Thread-1 (]: Database Error in model people (models/people.sql)
+  HTTPDriver for http://localhost:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Missing columns: 'craft' 'name' while processing query: 'SELECT name, craft FROM demo.raw_astros', required columns: 'name' 'craft'. (UNKNOWN_IDENTIFIER) (version 22.8.21.38 (official build))
+[0m17:43:57.067846 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '10072920-e906-43b1-bf63-620693bd115a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdf01d0>]}
+[0m17:43:57.068168 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model `demo_`.`people` ......................... [[31mERROR[0m in 0.04s]
+[0m17:43:57.068435 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m17:43:57.068700 [debug] [Thread-4 (]: Marking all children of 'model.cosmos_project.people' to be skipped because of status 'error'.  Reason: Database Error in model people (models/people.sql)
+  HTTPDriver for http://localhost:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Missing columns: 'craft' 'name' while processing query: 'SELECT name, craft FROM demo.raw_astros', required columns: 'name' 'craft'. (UNKNOWN_IDENTIFIER) (version 22.8.21.38 (official build)).
+[0m17:43:57.069510 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:43:57.069633 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m17:43:57.069748 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m17:43:57.069881 [info ] [MainThread]: 
+[0m17:43:57.070009 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.42 seconds (0.42s).
+[0m17:43:57.070274 [debug] [MainThread]: Command end result
+[0m17:43:57.081983 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m17:43:57.082843 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m17:43:57.085430 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m17:43:57.085569 [info ] [MainThread]: 
+[0m17:43:57.085733 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:43:57.085859 [info ] [MainThread]: 
+[0m17:43:57.086012 [error] [MainThread]: [31mFailure in model people (models/people.sql)[0m
+[0m17:43:57.086159 [error] [MainThread]:   Database Error in model people (models/people.sql)
+  HTTPDriver for http://localhost:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Missing columns: 'craft' 'name' while processing query: 'SELECT name, craft FROM demo.raw_astros', required columns: 'name' 'craft'. (UNKNOWN_IDENTIFIER) (version 22.8.21.38 (official build))
+[0m17:43:57.086278 [info ] [MainThread]: 
+[0m17:43:57.086404 [info ] [MainThread]:   compiled code at target/compiled/cosmos_project/models/people.sql
+[0m17:43:57.086512 [info ] [MainThread]: 
+[0m17:43:57.086633 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:43:57.088154 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.92184156, "process_in_blocks": "0", "process_kernel_time": 0.225749, "process_mem_max_rss": "170147840", "process_out_blocks": "0", "process_user_time": 1.144601}
+[0m17:43:57.088355 [debug] [MainThread]: Command `dbt run` failed at 17:43:57.088317 after 0.92 seconds
+[0m17:43:57.088523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cdcc470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd23610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cd23570>]}
+[0m17:43:57.088669 [debug] [MainThread]: Flushing usage events
+[0m17:44:07.097406 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:16:21.127285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e182f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106eb7b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106eb79d0>]}
+
+
+============================== 18:16:21.130248 | 88309808-c5e5-4dc7-81f9-c9bb1bfc3af8 ==============================
+[0m18:16:21.130248 [info ] [MainThread]: Running with dbt=1.10.11
+[0m18:16:21.130559 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'fail_fast': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'introspect': 'True', 'quiet': 'False', 'target_path': 'None', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --full-refresh', 'log_cache_events': 'False', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'no_print': 'None', 'static_parser': 'True', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'printer_width': '80'}
+[0m18:16:21.224363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106234640>]}
+[0m18:16:21.250106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d3ef10>]}
+[0m18:16:21.250688 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m18:16:21.322698 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m18:16:21.377870 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:16:21.378173 [debug] [MainThread]: Partial parsing: updated file: cosmos_project://models/people.sql
+[0m18:16:21.484330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072ad750>]}
+[0m18:16:21.514027 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m18:16:21.515924 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m18:16:21.528814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070bac60>]}
+[0m18:16:21.529013 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m18:16:21.529169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075e58d0>]}
+[0m18:16:21.529890 [info ] [MainThread]: 
+[0m18:16:21.530048 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:16:21.530161 [info ] [MainThread]: 
+[0m18:16:21.530354 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m18:16:21.530706 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m18:16:21.534693 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:16:22.812964 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m18:16:22.814476 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:16:22.829715 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m18:16:22.832888 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m18:16:22.859959 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.03 seconds
+[0m18:16:22.861342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074f6680>]}
+[0m18:16:22.862920 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m18:16:22.863230 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m18:16:22.863479 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m18:16:22.863661 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m18:16:22.868301 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m18:16:22.868738 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m18:16:22.899029 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    JSONExtractString(data, 'name')   AS name,
+    JSONExtractString(data, 'craft')  AS craft,
+    _inserted_at
+FROM `demo`.`raw_astros`
+          )
+        
+        ...
+[0m18:16:22.903998 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:16:22.911184 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m18:16:22.913240 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:16:22.914898 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m18:16:22.915280 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    JSONExtractString(data, 'name')   AS name,
+    JSONExtractString(data, 'craft')  AS craft,
+    _inserted_at
+FROM `demo`.`raw_astros`
+  ...
+[0m18:16:22.918180 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:16:22.920448 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m18:16:22.921434 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:16:22.932586 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m18:16:22.933513 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:16:22.934997 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88309808-c5e5-4dc7-81f9-c9bb1bfc3af8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fdfdd0>]}
+[0m18:16:22.935290 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.07s]
+[0m18:16:22.935561 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m18:16:22.936096 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:16:22.936221 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m18:16:22.936355 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m18:16:22.936499 [info ] [MainThread]: 
+[0m18:16:22.936649 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.41 seconds (1.41s).
+[0m18:16:22.936970 [debug] [MainThread]: Command end result
+[0m18:16:22.946459 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m18:16:22.947271 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m18:16:22.949825 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m18:16:22.949955 [info ] [MainThread]: 
+[0m18:16:22.950122 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:16:22.950250 [info ] [MainThread]: 
+[0m18:16:22.950390 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m18:16:22.975911 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.8885512, "process_in_blocks": "0", "process_kernel_time": 0.295861, "process_mem_max_rss": "170360832", "process_out_blocks": "0", "process_user_time": 1.230153}
+[0m18:16:22.976160 [debug] [MainThread]: Command `dbt run` succeeded at 18:16:22.976117 after 1.89 seconds
+[0m18:16:22.976324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a82ae60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044dc690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075cfe30>]}
+[0m18:16:22.976483 [debug] [MainThread]: Flushing usage events
+[0m18:16:24.994217 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:19:00.380833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d342f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dcbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dcb9d0>]}
+
+
+============================== 18:19:00.384038 | 48b4dbf5-d047-41d1-af14-9b636e8e6d29 ==============================
+[0m18:19:00.384038 [info ] [MainThread]: Running with dbt=1.10.11
+[0m18:19:00.384360 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'printer_width': '80', 'warn_error': 'None', 'partial_parse': 'True', 'write_json': 'True', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'no_print': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': '/Users/ilonakumpel/test-project/cosmos_project/logs', 'fail_fast': 'False', 'static_parser': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'log_cache_events': 'False'}
+[0m18:19:00.485902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106150640>]}
+[0m18:19:00.511836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5af10>]}
+[0m18:19:00.512392 [info ] [MainThread]: Registered adapter: clickhouse=1.9.2
+[0m18:19:00.560767 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m18:19:00.613559 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:19:00.613730 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:19:00.630315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107335850>]}
+[0m18:19:00.661099 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m18:19:00.662339 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m18:19:00.672738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107142d50>]}
+[0m18:19:00.672938 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m18:19:00.673090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e76270>]}
+[0m18:19:00.674082 [info ] [MainThread]: 
+[0m18:19:00.674240 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:19:00.674351 [info ] [MainThread]: 
+[0m18:19:00.674557 [debug] [MainThread]: Acquiring new clickhouse connection 'master'
+[0m18:19:00.674923 [debug] [ThreadPool]: Acquiring new clickhouse connection 'list_'
+[0m18:19:00.680031 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:19:01.048143 [debug] [ThreadPool]: dbt_clickhouse adapter: On list_: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list_"} */
+
+    select name from system.databases
+  ...
+[0m18:19:01.049407 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:19:01.060013 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_, now list__demo)
+[0m18:19:01.062841 [debug] [ThreadPool]: dbt_clickhouse adapter: On list__demo: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "connection_name": "list__demo"} */
+select
+      t.name as name,
+      t.database as schema,
+      multiIf(
+        engine in ('MaterializedView', 'View'), 'view',
+        engine = 'Dictionary', 'dictionary',
+        'table'
+      ) as type,
+      db.engine as db_engine,0 as is_on_cluster
+          from system.tables as t join system.databases as db on t.database = db.name
+        where schema = 'demo'
+      
+
+  ...
+[0m18:19:01.066703 [debug] [ThreadPool]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:19:01.067662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10749fc70>]}
+[0m18:19:01.068931 [debug] [Thread-1 (]: Began running node model.cosmos_project.people
+[0m18:19:01.069165 [info ] [Thread-1 (]: 1 of 1 START sql table model `demo`.`people` ................................... [RUN]
+[0m18:19:01.069368 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list__demo, now model.cosmos_project.people)
+[0m18:19:01.069526 [debug] [Thread-1 (]: Began compiling node model.cosmos_project.people
+[0m18:19:01.073083 [debug] [Thread-1 (]: Writing injected SQL for node "model.cosmos_project.people"
+[0m18:19:01.073537 [debug] [Thread-1 (]: Began executing node model.cosmos_project.people
+[0m18:19:01.099549 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+            
+
+    
+        create table `demo`.`people__dbt_backup`
+        
+  
+        
+  engine = MergeTree()
+        
+      order by (tuple())
+        
+        
+        
+        
+                    -- end_of_sql
+                    SETTINGS  replicated_deduplication_window=0
+
+                    
+            empty
+          as (
+            
+
+SELECT
+    JSONExtractString(data, 'name')   AS name,
+    JSONExtractString(data, 'craft')  AS craft,
+    _inserted_at
+FROM `demo`.`raw_astros`
+          )
+        
+        ...
+[0m18:19:01.107013 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.01 seconds
+[0m18:19:01.113566 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+    select name, type from system.columns where table = 'people__dbt_backup'
+    
+      and database = 'demo'
+    
+    order by position
+  ...
+[0m18:19:01.117009 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:19:01.118638 [debug] [Thread-1 (]: Writing runtime sql for node "model.cosmos_project.people"
+[0m18:19:01.118987 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+
+  
+    
+    
+    
+        
+         
+
+
+        insert into `demo`.`people__dbt_backup`
+        ("name", "craft", "_inserted_at")
+
+SELECT
+    JSONExtractString(data, 'name')   AS name,
+    JSONExtractString(data, 'craft')  AS craft,
+    _inserted_at
+FROM `demo`.`raw_astros`
+  ...
+[0m18:19:01.122511 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:19:01.124602 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+EXCHANGE TABLES `demo`.`people__dbt_backup` AND `demo`.`people` 
+  
+  ...
+[0m18:19:01.125862 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:19:01.136828 [debug] [Thread-1 (]: dbt_clickhouse adapter: On model.cosmos_project.people: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "cosmos_project", "target_name": "dev", "node_id": "model.cosmos_project.people"} */
+drop table if exists `demo`.`people__dbt_backup` 
+  ...
+[0m18:19:01.138472 [debug] [Thread-1 (]: dbt_clickhouse adapter: SQL status: OK in 0.00 seconds
+[0m18:19:01.139868 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '48b4dbf5-d047-41d1-af14-9b636e8e6d29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a963ad0>]}
+[0m18:19:01.140156 [info ] [Thread-1 (]: 1 of 1 OK created sql table model `demo`.`people` .............................. [[32mOK[0m in 0.07s]
+[0m18:19:01.140426 [debug] [Thread-1 (]: Finished running node model.cosmos_project.people
+[0m18:19:01.140965 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:19:01.141079 [debug] [MainThread]: Connection 'model.cosmos_project.people' was left open.
+[0m18:19:01.141184 [debug] [MainThread]: On model.cosmos_project.people: Close
+[0m18:19:01.141307 [info ] [MainThread]: 
+[0m18:19:01.141432 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m18:19:01.141690 [debug] [MainThread]: Command end result
+[0m18:19:01.152553 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/ilonakumpel/test-project/cosmos_project/target/manifest.json
+[0m18:19:01.153402 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/ilonakumpel/test-project/cosmos_project/target/semantic_manifest.json
+[0m18:19:01.156061 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/ilonakumpel/test-project/cosmos_project/target/run_results.json
+[0m18:19:01.156201 [info ] [MainThread]: 
+[0m18:19:01.156370 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:19:01.156488 [info ] [MainThread]: 
+[0m18:19:01.156619 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m18:19:01.158452 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.8166135, "process_in_blocks": "0", "process_kernel_time": 0.226398, "process_mem_max_rss": "167231488", "process_out_blocks": "0", "process_user_time": 1.041357}
+[0m18:19:01.158686 [debug] [MainThread]: Command `dbt run` succeeded at 18:19:01.158644 after 0.82 seconds
+[0m18:19:01.158846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a99e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac4d950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac4d6d0>]}
+[0m18:19:01.158991 [debug] [MainThread]: Flushing usage events
+[0m18:19:10.679640 [debug] [MainThread]: An error was encountered while trying to flush usage events

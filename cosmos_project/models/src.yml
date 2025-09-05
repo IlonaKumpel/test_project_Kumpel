@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: demo
+    schema: demo   
+    
+    tables:
+      - name: raw_astros

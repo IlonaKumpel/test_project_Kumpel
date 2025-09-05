@@ -1,0 +1,12 @@
+cosmos_project:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: cosmos_project
+      host: localhost
+      port: 8123
+      user: default
+      password: ""
+      secure: False
+      verify: False

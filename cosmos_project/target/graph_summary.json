@@ -1,0 +1,1 @@
+{"_invocation_id": "48b4dbf5-d047-41d1-af14-9b636e8e6d29", "linked": {"0": {"name": "source.cosmos_project.demo.raw_astros", "type": "source", "succ": [1]}, "1": {"name": "model.cosmos_project.people", "type": "model"}}}

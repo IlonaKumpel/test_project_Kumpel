@@ -1,0 +1,27 @@
+[0m12:31:06.196669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079602f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11163b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11163bb10>]}
+
+
+============================== 12:31:06.198936 | 0f2e3b2c-53ae-4b0f-8e6c-005a5c43747f ==============================
+[0m12:31:06.198936 [info ] [MainThread]: Running with dbt=1.10.11
+[0m12:31:06.199237 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'log_path': '/Users/ilonakumpel/test-project/dbt/logs', 'fail_fast': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'printer_width': '80', 'empty': 'None', 'target_path': 'None', 'debug': 'False', 'quiet': 'False', 'static_parser': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init cosmos_project', 'log_cache_events': 'False', 'partial_parse': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False'}
+[0m12:31:06.207772 [info ] [MainThread]: Creating dbt configuration folder at /Users/ilonakumpel/.dbt
+[0m12:31:06.208643 [info ] [MainThread]: Setting up your profile.
+[0m12:32:58.905001 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m12:32:58.939931 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 112.78384, "process_in_blocks": "0", "process_kernel_time": 0.110387, "process_mem_max_rss": "107708416", "process_out_blocks": "0", "process_user_time": 0.640547}
+[0m12:32:58.940468 [debug] [MainThread]: Command `dbt init` succeeded at 12:32:58.940348 after 112.78 seconds
+[0m12:32:58.940882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116a3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111732d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116de7a0>]}
+[0m12:32:58.941240 [debug] [MainThread]: Flushing usage events
+[0m12:33:00.512300 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:33:49.692373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10443c2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053179d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105317b10>]}
+
+
+============================== 12:33:49.695206 | 822f8624-de31-49c1-8c5e-abf9fab7d6ca ==============================
+[0m12:33:49.695206 [info ] [MainThread]: Running with dbt=1.10.11
+[0m12:33:49.695499 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'debug': 'False', 'log_format': 'default', 'log_path': '/Users/ilonakumpel/test-project/dbt/logs', 'write_json': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'target_path': 'None', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'partial_parse': 'True', 'no_print': 'None', 'use_colors': 'True', 'profiles_dir': '/Users/ilonakumpel/.dbt', 'warn_error': 'None', 'introspect': 'True', 'printer_width': '80', 'invocation_command': 'dbt init cosmos_project', 'use_experimental_parser': 'False'}
+[0m12:33:49.706181 [info ] [MainThread]: Setting up your profile.
+[0m12:33:50.829202 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m12:33:50.832033 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 1.17537, "process_in_blocks": "0", "process_kernel_time": 0.12358, "process_mem_max_rss": "108707840", "process_out_blocks": "0", "process_user_time": 0.616535}
+[0m12:33:50.832573 [debug] [MainThread]: Command `dbt init` succeeded at 12:33:50.832473 after 1.18 seconds
+[0m12:33:50.832898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105383100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10540ed50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053ba7a0>]}
+[0m12:33:50.833204 [debug] [MainThread]: Flushing usage events
+[0m12:33:52.086860 [debug] [MainThread]: An error was encountered while trying to flush usage events
